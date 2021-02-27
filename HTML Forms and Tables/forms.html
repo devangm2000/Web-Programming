@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <form action="/abcd">
+            <h1>Form:</h1>
+            <!--check web forms on MDN website-->
+            <!--placeholder:what text will be shown at first-->
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="enter password">
+            <input type="color">
+            <input type="number" min="1" max="10">
+            <input type="range">
+            <input type="submit" name="" id="">
+            <!--labels-->
+            <!--ID and for=" " should be same-->
+            <!--check username and password in abcd link(i.e name)-->
+            <!--the name will be used to send data to server-->
+            <h1>Labels:</h1>
+            <br>
+            <label for="football">Do you like football?</label>
+            <input type="checkbox" name="football" id="football" checked>
+            <br>
+            <label for="cricket">Do you like cricket?</label>
+            <input type="checkbox" name="cricket" id="cricket">
+            <br>
+            <label for="username">Enter your username:</label>
+            <input type="text" name="username" id="username" placeholder="username">
+            <br>
+            <label for="password">Enter your password:</label>
+            <input type="password" name="password" id="password" placeholder="password">
+            <br>
+            <!--value has to be entered else size=on will come-->
+            <!--value is only for link here(unlike button)-->
+            <p>Choose your shirt size:</p>
+            <label for="38">38</label>
+            <input type="radio" name="size" id="38" value="first">
+            <label for="40">40</label>
+            <input type="radio" name="size" id="40" value="second">
+            <label for="42">42</label>
+            <input type="radio" name="size" id="42" value="third">
+            <br>
+            <!--value is only for link here(unlike button)-->
+            <!--selected can be used for pre selection-->
+            <label for="pet-select">Please select your pet:</label>
+            <select name="pets" id="pet-select">
+                <option value=" ">Choose an option</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="monke">Monke</option>
+            </select>
+            <br>
+            <label for="requests">Any special requests?</label>
+            <br>
+            <textarea name="requests" id="requests" cols="20" rows="10" placeholder="write something"></textarea>
+
+            <h1>Button:</h1>
+            <br>
+            <button type="submit">Submit</button>
+            <!--type="button" does not submit the form-->
+            <button type="button">Submit</button>
+            <!--Using the input tag-->
+            <input type="submit" value="Click Me">
+        </form>
+        <br>
+        <hr>
+        <!--Button outside the form: cannot perform any action-->
+        <button>Not Inside Form</button>
+
+    </body>
+
+</html>

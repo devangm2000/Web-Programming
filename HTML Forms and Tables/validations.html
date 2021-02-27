@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <!--validations:constraints-->
+        <h1>Validation</h1>
+        <form action="/abcd">
+            <label for="password">Enter the password</label>
+            <!--required so that it cannot be left as blank-->
+            <input type="password" name="password" id="password" minlength="5" maxlength="20" required>
+            <br>
+            <label for="email">Enter email</label>
+            <input type="email"><br>
+            <label for="url">Enter URL</label>
+            <input type="url" id="url" required>
+            <button type="submit" required>Submit</button>
+        </form>
+
+    </body>
+
+</html>
