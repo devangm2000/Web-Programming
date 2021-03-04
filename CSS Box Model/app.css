@@ -1,0 +1,42 @@
+body{
+    margin: 0;   /*by default there's some margin*/
+}
+div{
+    height: 200px;
+    width: 400px;
+    
+}
+h1{
+    background-color: lightblue;
+    width: 100px;
+    padding-top: 50px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+#one{
+    background-color:lightgrey;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box; /*width from border to border*/
+    border-radius: 50%;   /*rounded corners*/
+    margin-left: 40px;
+    
+}
+#two{
+    background-color: aqua;
+    border-width: 4px;
+    border-color: brown;
+    border-style: ridge;
+    border-left-color: black;
+    border-radius: 10px 200px 30px 40px ;      /*pixel or %  */ 
+    margin-top: 30px;
+}
+#three{
+    background-color: darkolivegreen;
+    border:thick dotted blue ;  /* width style colour*/
+    border-right-style: solid;
+    border-radius: 10px;   
+    padding-right: 50px;
+    margin: 30px;
+}
